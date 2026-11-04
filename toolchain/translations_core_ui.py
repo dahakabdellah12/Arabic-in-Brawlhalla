@@ -1,0 +1,161 @@
+# -*- coding: utf-8 -*-
+"""
+Core UI Translations for Brawlhalla Arabic Localization:
+Replays, Casual Queues, Ranked Queues, Missions & Notifications, Lobbies, Level Select, News & Popups.
+High-fidelity Native Gaming Arabic phrasing.
+"""
+
+CORE_UI_TRANSLATIONS = {
+    # --- Navigation & General ---
+    "UI_GoBack": "رجوع",
+    "UI_VideoPlayer_GoBack": "رجوع",
+    "UI_SendEmoji_Prompt": "إرسال تعبير",
+    "UI_UniversalColorScheme": "تشكيلة ألوان جميع الأساطير",
+    "UI_Crossovers": "شخصيات الكروس أوفر",
+    "UI_KnockoutEffect": "تأثير الضربة القاضية",
+    "UI_Moniker": "اللقب",
+    "UI_Close": "إغلاق",
+    "UI_SelectCharacter_Header": "اختر أسطورة",
+    "UI_Chat_PressEnter": "اضغط Enter للدردشة",
+
+    # --- Loading Screen Phase Descriptions ---
+    "UI_PHASE_DESCRIPTION_NONE": "بدء تشغيل اللعبة",
+    "UI_PHASE_DESCRIPTION_SUCCESS_NONE": "بدء تشغيل اللعبة",
+    "UI_PHASE_DESCRIPTION_LOADING_EXTERNAL_CONFIG": "جاري تحميل ملفات اللعبة",
+    "UI_PHASE_DESCRIPTION_CONNECTING_TO_SERVICE_STEAM": "جاري الاتصال بخوادم Steam",
+    "UI_PHASE_DESCRIPTION_CONNECTING_TO_BRAWLHALLA": "جاري الاتصال بخوادم Brawlhalla",
+
+    # --- Replays Screen ---
+    "UI_Replays_SavedReplays": "تسجيلات المباريات المحفوظة",
+    "UI_Replays_IncompatiblePrimer": "تصبح التسجيلات غير متوافقة عند تحديث إصدار اللعبة",
+    "UI_Replays_Preview": "معاينة المباراة",
+    "UI_Replays_Game": "النمط:",
+    "UI_Replays_Rules": "القواعد:",
+    "UI_Replays_Teams": "الفرق:",
+    "UI_Replays_Players": "اللاعب:",
+    "UI_Replays_CustomOnline": "مخصص عبر الإنترنت",
+    "UI_Replays_NoReplaySelected": "لم يتم تحديد أي تسجيل",
+    "UI_Replays_OldReplay": "ملف تسجيل قديم",
+    "UI_Replays_OldReplay_Desc": "ملف التسجيل هذا من إصدار أقدم وغير متوافق حالياً.",
+    "UI_Replay_ReplayError": "خطأ في قراءة ملف التسجيل",
+    "UI_Replay_ReplayError_Desc": "هذا الملف تالف أو ليس ملف تسجيل صالحاً.",
+    "UI_ReplaySettingsHeader": "إعدادات تشغيل التسجيل",
+    "UI_ReplayPlayback_Camera": "الكاميرا",
+    "UI_ReplayPlayback_CameraMode": "وضع الكاميرا",
+    "UI_ReplayPlayback_Play": "تشغيل",
+    "UI_ReplayPlayback_Pause": "إيقاف مؤقت",
+    "UI_ReplayPlayback_HideUI": "إخفاء الواجهة",
+    "UI_ReplayPlayback_NextMoment": "تخطي للأمام",
+    "UI_ReplayPlayback_PrevMoment": "رجوع للخلف",
+    "UI_ReplayPlayback_SpeedUp": "أسرع",
+    "UI_ReplayPlayback_SlowDown": "أبطأ",
+    "UI_ReplayPlayback_Zoom": "تكبير",
+    "UI_ReplayPlayback_Pan": "تحريك",
+    "UI_ReplayPlayback_PlaybackControls": "سرعة التشغيل",
+    "UI_ReplayPlayback_PlaybackSpeed": "التحكم بالسرعة",
+
+    # --- Casual Queues ---
+    "UI_Casual_Header": "المباريات الودية",
+    "UI_Casual_FFA": "قتال حر للجميع",
+    "UI_Casual_FFA_Desc": "نزال حر ضد لاعبين حقيقيين",
+    "UI_Casual_Friendly_2": "2 ضد 2 ودي",
+    "UI_Casual_Friendly_2_Desc": "العب بمفردك أو مع صديق",
+    "UI_Casual_Strikeout": "تصفية 1 ضد 1",
+    "UI_Casual_Strikeout_Desc": "أسطورة لكل روح قتالية",
+    "UI_Casual_Experimental": "1 ضد 1 تجريبي",
+    "UI_Casual_Experimental_Desc": "جرّب آليات القتال الجديدة",
+    "UI_1v1Unranked_Desc": "نزال ممتع بـ 3 أرواح",
+    "UI_Casual_Recommended": "موصى به!",
+    "UI_Casual_View_Test_Features": "عرض الميزات التجريبية",
+
+    # --- Ranked Queues ---
+    "UI_Ranked_Header": "المصنف",
+    "UI_Ranked_1": "1 ضد 1 مصنف",
+    "UI_Ranked_1_Desc": "نزال فردي خالص",
+    "UI_Ranked_2": "2 ضد 2 مصنف",
+    "UI_Ranked_2_Desc": "العب بمفردك أو مع صديق!",
+    "UI_Rotating_Ranked_Desc": "اجمع فريقك وخض النزال",
+    "UI_Ranked_Room": "انضم لمباراة مصنفة",
+    "UI_Ranked_Room_Desc": "ادخل برقم الغرفة",
+    "UI_Ranked_Cup": "البطولات الرسمية",
+    "UI_Ranked_Cup_Desc": "تنافس في البطولات لتصبح بطلاً عالمياً",
+    "UI_Ranked_Mission_Title_Elo": "التقييم",
+    "UI_Ranked_Mission_Title_Wins": "الانتصارات",
+
+    # --- Missions & Notifications Tray ---
+    "UI_Missions": "المهمات",
+    "UI_Missions_Caps": "المهمات",
+    "UI_Missions_NotificationHeader": "الإشعارات",
+    "UI_SOCIALHUB_TOOLTIP_MISSIONS": "الإشعارات",
+    "UI_Missions_EventMissionHeader": "المهمات اليومية للفعالية",
+    "UI_Missions_MissionHeader": "المهمات اليومية",
+    "UI_Missions_NewMission": "مهمة جديدة!",
+    "UI_Missions_NoMissionsPrimer": "اكتملت جميع المهمات. عُد غداً للحصول على مهمات جديدة!",
+    "UI_Missions_Replace": "استبدال",
+    "UI_Missions_Replacing": "جاري الاستبدال...",
+    "UI_Missions_Dismiss": "تجاهل",
+    "UI_Missions_ChooseEither": "اختر أحدهما:",
+    "UI_Missions_AcceptClanInvite": "قبول دعوة العشيرة",
+    "UI_Missions_DeclineClanInvite": "رفض دعوة العشيرة",
+    "UI_Missions_Win1Play2": "فز في مباراة واحدة أو العب مباراتين",
+    "UI_Missions_Read": "قراءة",
+
+    # --- System & In-Game Options Popup ---
+    "UI_System_Settings_Streamer_Mode": "وضع البث",
+    "UI_System_Settings_Streamer_Mode_Off": "إيقاف",
+    "UI_System_Settings_Streamer_Mode_On": "تشغيل",
+    "UI_System_Settings_Delete_Outdated_Replays": "التسجيلات القديمة",
+    "UI_System_Settings_Outdated_Replays_Keep": "احتفاظ",
+    "UI_System_Settings_Outdated_Replays_Delete": "حذف",
+    "UI_Options_HoldToPause": "اضغط مطولاً للإيقاف المؤقت",
+    "UI_System_Settings_MenuGraphics_ChatDisplay": "ظهور الدردشة",
+    "UI_System_Settings_MenuGraphics_ChatDisplay_All": "الكل",
+    "UI_System_Settings_Spectate_Delay": "تأخير المشاهدة",
+    "UI_System_Settings_Header": "إعدادات النظام",
+
+    # --- Lobbies & Game Rooms ---
+    "UI_Lobby_Header": "غرفة اللعبة",
+    "UI_Lobby_Custom": "غرفة مخصصة",
+    "UI_Lobby_FFA": "غرفة قتال حر للجميع",
+    "UI_Lobby_Friendly_2v2": "غرفة 2 ضد 2 ودي",
+    "UI_Lobby_Ranked_1v1": "غرفة 1 ضد 1 مصنف",
+    "UI_Lobby_Ranked_2v2": "غرفة 2 ضد 2 مصنف",
+    "UI_Lobby_Ranked_3v3": "غرفة 3 ضد 3 مصنف",
+    "UI_Lobby_1v1or2v2": "غرفة مصنفة 1 ضد 1 أو 2 ضد 2",
+    "UI_Lobby_BOTW": "غرفة معركة الأسبوع",
+    "UI_Lobby_AnyOnline": "أي غرفة عبر الإنترنت",
+    "UI_Lobby_NotInRoom": "لست في غرفة لعبة",
+    "UI_Lobby_PostGame": "بعد المباراة",
+    "UI_Lobby_Ignore": "تجاهل",
+    "UI_Lobby_UnIgnore": "إلغاء التجاهل",
+
+    # --- Level / Map Selection ---
+    "UI_LevelSelect_SelectMap": "اختر خريطة",
+    "UI_LevelSelect_Leader_Chooses": "قائد المجموعة يختار الخريطة",
+    "UI_LevelSelect_VoteForMap": "صوّت لخريطة",
+    "UI_LevelSelect_VoteForMap_Spectator": "اللاعبون يصوتون للخرائط",
+    "UI_LevelSelect_TimeLeft": "الوقت المتبقي -",
+    "UI_LevelSelect_StrikeOthers": "استبعاد الخرائط الأخرى",
+    "UI_LevelSelect_Striking_Begin": ": ابدأ استبعاد الخرائط",
+    "UI_LevelSelect_AllButX_Strikes_1": "استبعد خريطة واحدة إضافية للبدء.",
+    "UI_LevelSelect_AllButX_Strikes_2": "استبعد خريطتين اثنتين إضافيتين للبدء.",
+    "UI_LevelSelect_AllButX_Primer": "خاسر آخر مباراة يستبعد الخرائط حتى تتبقى 3 خرائط.",
+
+    # --- Friends Status ---
+    "UI_FriendStatus_In_Matchmaking": "يبحث عن مباراة...",
+    "UI_FriendStatus_In_Matchmaking_Party": "يبحث عن مباراة رفقة مجموعته...",
+    "UI_FriendStatus_In_Game": "يخوض معركة حالياً",
+    "UI_FriendStatus_In_Queue": "ينتظر في طابور المباريات",
+    "UI_FriendStatus_In_Custom": "في غرفة مخصصة",
+    "UI_FriendStatus_In_Tournament": "يشارك في منافسات بطولة",
+    "UI_FriendStatus_In_Training": "يتدرب في غرفة التمرين",
+    "UI_FriendStatus_Spectating": "يشاهد إحدى المباريات",
+    "UI_FriendStatus_Online": "متصل ومتاح",
+    "UI_FriendStatus_Offline": "غير متصل",
+
+    # --- News & Banners ---
+    "UI_NewsPage_Header": "أحدث أخبار وتحديثات اللعبة",
+    "UI_NewsPage_ReadMore": "قراءة التفاصيل",
+    "UI_NewsPage_Next": "التالي",
+    "UI_NewsPage_Prev": "السابق"
+}
