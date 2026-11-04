@@ -461,16 +461,16 @@ UI_TRANSLATIONS = {
     "UI_TournamentEvents_FilterRegions": "تصفية المناطق",
 
     # --- Offline Play Menu (قائمة اللعب المحلي) ---
-    "UI_Offline_Header": "اللعب دون اتصال",
-    "UI_Offline_Couch_Party": "حفلة منزلية",
-    "UI_Offline_Couch_Party_Desc": "لعبة محلية دون اتصال مع الأصدقاء",
+    "UI_Offline_Header": "اللعب المحلي",
+    "UI_Offline_Couch_Party": "لعب محلي",
+    "UI_Offline_Couch_Party_Desc": "نزال على نفس الجهاز",
     "UI_Offline_Training": "التدريب",
-    "UI_Offline_Training_Desc": "تدرب وادرس الحركات",
-    "UI_Offline_Tournament": "تحدي\nالأدوار الإقصائية",
-    "UI_Offline_Tournament_Desc": "تنافس ضد الكمبيوتر",
-    "UI_Offline_Tutorials": "الدروس التعليمية",
-    "UI_Offline_Tutorials_Desc": "تعلم طريقة اللعب",
-    "UI_Offline_Challenges": "معاينة التحديات",
+    "UI_Offline_Training_Desc": "تدرّب واصقل مهاراتك",
+    "UI_Offline_Tournament": "البطولة",
+    "UI_Offline_Tournament_Desc": "تحدَّ مقاتلي الكمبيوتر",
+    "UI_Offline_Tutorials": "التعليم",
+    "UI_Offline_Tutorials_Desc": "تعلم أساسيات القتال",
+    "UI_Offline_Challenges": "تحديات المهارة",
 
     # --- Party Manager (إدارة المجموعة - ماناجر بارتي) ---
     "UI_Party_ManageParty": "إدارة المجموعة",

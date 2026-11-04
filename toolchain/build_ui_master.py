@@ -144,16 +144,38 @@ UI_MASTER = {
     "UI_Missions_Read": "قراءة التفاصيل",
 
     # --- Offline Play Menu ---
-    "UI_Offline_Header": "اللعب دون اتصال",
-    "UI_Offline_Couch_Party": "جلسة لعب منزلية",
-    "UI_Offline_Couch_Party_Desc": "تحدَّ أصدقاءك محلياً على نفس الجهاز",
-    "UI_Offline_Training": "غرفة التدريب",
-    "UI_Offline_Training_Desc": "تدرب على التكنيكات واصقل مهاراتك",
-    "UI_Offline_Tournament": "تحدي الأدوار الإقصائية",
-    "UI_Offline_Tournament_Desc": "خض بطولة متدرجة ضد مقاتلي الكمبيوتر",
-    "UI_Offline_Tutorials": "أكاديمية التدريب",
-    "UI_Offline_Tutorials_Desc": "تعلم أساسيات وحركات القتال خطوة بخطوة",
-    "UI_Offline_Challenges": "معاينة التحديات المهارية",
+    "UI_Offline_Header": "اللعب المحلي",
+    "UI_Offline_Couch_Party": "لعب محلي",
+    "UI_Offline_Couch_Party_Desc": "نزال على نفس الجهاز",
+    "UI_Offline_Training": "التدريب",
+    "UI_Offline_Training_Desc": "تدرّب واصقل مهاراتك",
+    "UI_Offline_Tournament": "البطولة",
+    "UI_Offline_Tournament_Desc": "تحدَّ مقاتلي الكمبيوتر",
+    "UI_Offline_Tutorials": "التعليم",
+    "UI_Offline_Tutorials_Desc": "تعلم أساسيات القتال",
+    "UI_Offline_Challenges": "تحديات المهارة",
+
+    # --- Rejoin Game Dialog ---
+    "UI_Rejoin_Header": "المباراة جارية",
+    "UI_Rejoin_RejoinGame": "العودة للمباراة",
+
+    # --- Battle Pass Tabs & Week Navigation ---
+    "UI_Progress_Caps": "التقدم",
+    "UI_Paths_Caps": "تغيير المسار",
+    "UI_About_Caps": "حول",
+    "UI_BattlePass_WeekMissions_Prefix": "الأسبوع",
+    "UI_BattlePass_WeeklyBonusPrefix": "مكافأة:",
+    "UI_BattlePass_WeeklyBonus": "مهمات مكتملة",
+    "UI_BattlePass_RequiresBP": "يتطلب تذكرة المعركة",
+    "UI_BattlePass_BattlePointsMissionDesc": "كسب خبرة المعركة",
+    "MissionType_Desc_Completionist": "المُنجز الكامل",
+
+    # --- Event Center & Menu Prompts ---
+    "UI_EventCenterButton_Anniversary": "الذكرى السنوية",
+    "UI_Store_Tab_Anniversary": "الذكرى السنوية",
+    "TileType_EventCenter": "مكافآت مجانية",
+    "UI_MainMenu_SponseredVideo": "مكافآت مجانية",
+    "GameModeType_BOTW3v3BrawlballNewMap_DisplayName": "شجار الكرة (الإليزيوم)",
 
     # --- Party Manager ---
     "UI_Party_ManageParty": "إدارة المجموعة واللاعبين",

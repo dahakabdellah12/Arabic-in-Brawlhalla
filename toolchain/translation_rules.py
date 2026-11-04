@@ -37,30 +37,47 @@ for cat_name, cat_dict in glossary_data.get('Categories', {}).items():
     for k, v in cat_dict.items():
         GLOSSARY[k] = v
 
-# Aggregate all exact key maps
+# Aggregate all exact key maps with Arabic protection
 MASTER_KEY_MAP = {}
-MASTER_KEY_MAP.update(UI_TRANSLATIONS)
-MASTER_KEY_MAP.update(CORE_UI_TRANSLATIONS)
-MASTER_KEY_MAP.update(UI_MASTER)
-MASTER_KEY_MAP.update(UI_EXTENDED)
-MASTER_KEY_MAP.update(MISSION_EXACT_MAP)
-MASTER_KEY_MAP.update(MISSIONS_FULL)
-MASTER_KEY_MAP.update(SKINS_STORE_FULL)
-MASTER_KEY_MAP.update(SOCIAL_FULL)
-MASTER_KEY_MAP.update(LORE_FULL)
-MASTER_KEY_MAP.update(TILES_MAP)
-MASTER_KEY_MAP.update(CUSTOM_GAMES_MAP)
-MASTER_KEY_MAP.update(HERO_TITLES)
-MASTER_KEY_MAP.update(PLAYLIST_MAP)
-MASTER_KEY_MAP.update(GAMEMODE_MAP)
-MASTER_KEY_MAP.update(SCORING_MAP)
-MASTER_KEY_MAP.update(ITEM_MAP)
-MASTER_KEY_MAP.update(HINTS_MAP)
-MASTER_KEY_MAP.update(ERRORS_MAP)
-MASTER_KEY_MAP.update(COLOR_MAP)
-MASTER_KEY_MAP.update(TRAIL_MAP)
-MASTER_KEY_MAP.update(PODIUM_MAP)
-MASTER_KEY_MAP.update(ENTITLEMENT_MAP)
+
+def merge_map(target, source):
+    for k, v in source.items():
+        if not v:
+            continue
+        has_ar_new = any('\u0600' <= c <= '\u06ff' for c in v)
+        if k not in target:
+            target[k] = v
+        else:
+            has_ar_old = any('\u0600' <= c <= '\u06ff' for c in target[k])
+            # If new value has Arabic, or old value didn't have Arabic, allow update
+            if has_ar_new or not has_ar_old:
+                target[k] = v
+
+# Broad bases first
+merge_map(MASTER_KEY_MAP, UI_EXTENDED)
+merge_map(MASTER_KEY_MAP, MISSIONS_FULL)
+merge_map(MASTER_KEY_MAP, SKINS_STORE_FULL)
+merge_map(MASTER_KEY_MAP, SOCIAL_FULL)
+merge_map(MASTER_KEY_MAP, LORE_FULL)
+merge_map(MASTER_KEY_MAP, TILES_MAP)
+merge_map(MASTER_KEY_MAP, CUSTOM_GAMES_MAP)
+merge_map(MASTER_KEY_MAP, HERO_TITLES)
+merge_map(MASTER_KEY_MAP, PLAYLIST_MAP)
+merge_map(MASTER_KEY_MAP, GAMEMODE_MAP)
+merge_map(MASTER_KEY_MAP, SCORING_MAP)
+merge_map(MASTER_KEY_MAP, ITEM_MAP)
+merge_map(MASTER_KEY_MAP, HINTS_MAP)
+merge_map(MASTER_KEY_MAP, ERRORS_MAP)
+merge_map(MASTER_KEY_MAP, COLOR_MAP)
+merge_map(MASTER_KEY_MAP, TRAIL_MAP)
+merge_map(MASTER_KEY_MAP, PODIUM_MAP)
+merge_map(MASTER_KEY_MAP, ENTITLEMENT_MAP)
+merge_map(MASTER_KEY_MAP, MISSION_EXACT_MAP)
+
+# Curated UI translations have final priority
+merge_map(MASTER_KEY_MAP, UI_TRANSLATIONS)
+merge_map(MASTER_KEY_MAP, UI_MASTER)
+merge_map(MASTER_KEY_MAP, CORE_UI_TRANSLATIONS)
 
 # Add stats & stances to glossary
 GLOSSARY.update(STATS_AND_STANCES)
