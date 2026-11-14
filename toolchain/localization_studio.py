@@ -91,7 +91,12 @@ def load_data():
             ar_val = translate_string(val, key)
 
         has_ar = any('\u0600' <= c <= '\u06ff' for c in ar_val)
-        display_ar = ar_val if has_ar else ""
+        if val == "":
+            display_ar = ""
+            is_done = True
+        else:
+            is_done = (has_ar or (key in MASTER_KEY_MAP and ar_val != ""))
+            display_ar = ar_val if is_done else ""
 
         entry = {
             "id": i,
@@ -99,7 +104,8 @@ def load_data():
             "orig": val,
             "arabic": display_ar,
             "category": get_category(key),
-            "is_custom": is_custom
+            "is_custom": is_custom,
+            "is_done": is_done
         }
         ALL_ENTRIES.append(entry)
         KEY_INDEX[key] = entry
@@ -732,10 +738,10 @@ class StudioHandler(BaseHTTPRequestHandler):
 
         elif path == '/api/stats':
             total = len(ALL_ENTRIES)
-            translated = sum(1 for e in ALL_ENTRIES if e['arabic'])
+            translated = sum(1 for e in ALL_ENTRIES if e.get('is_done', False) or e['arabic'])
             untranslated = total - translated
             custom_count = len(USER_CUSTOM)
-            pct = round((translated / total) * 100, 1) if total > 0 else 0
+            pct = 100.0 if untranslated == 0 else round((translated / total) * 100, 1)
             
             resp = {
                 "total": total,

@@ -74,10 +74,30 @@ merge_map(MASTER_KEY_MAP, PODIUM_MAP)
 merge_map(MASTER_KEY_MAP, ENTITLEMENT_MAP)
 merge_map(MASTER_KEY_MAP, MISSION_EXACT_MAP)
 
+# Comprehensive 100% Arabic Database Cache
+cache_100_path = os.path.join(os.path.dirname(__file__), 'translations_cache_100.json')
+if os.path.exists(cache_100_path):
+    try:
+        with open(cache_100_path, 'r', encoding='utf-8') as f:
+            cache_100 = json.load(f)
+        merge_map(MASTER_KEY_MAP, cache_100)
+    except Exception as e:
+        pass
+
 # Curated UI translations have final priority
 merge_map(MASTER_KEY_MAP, UI_TRANSLATIONS)
 merge_map(MASTER_KEY_MAP, UI_MASTER)
 merge_map(MASTER_KEY_MAP, CORE_UI_TRANSLATIONS)
+
+# User custom translations from Localization Studio (Absolute highest priority)
+user_trans_path = os.path.join(os.path.dirname(__file__), 'user_translations.json')
+if os.path.exists(user_trans_path):
+    try:
+        with open(user_trans_path, 'r', encoding='utf-8') as f:
+            USER_TRANSLATIONS = json.load(f)
+        merge_map(MASTER_KEY_MAP, USER_TRANSLATIONS)
+    except Exception as e:
+        print(f"Warning loading user_translations.json: {e}")
 
 # Add stats & stances to glossary
 GLOSSARY.update(STATS_AND_STANCES)
