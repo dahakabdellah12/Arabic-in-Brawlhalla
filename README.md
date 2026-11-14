@@ -39,23 +39,23 @@
 
 <div align="center">
 
-### قائمة الخيارات والإعدادات أثناء المباراة (Pause Menu)
-<img src="assets/screenshots/pause_menu.jpg" alt="قائمة الإيقاف المؤقت" width="80%">
+### القائمة الرئيسية وأحداث اللعبة (Main Menu & Event Center)
+<img src="assets/screenshots/main_menu.jpg" alt="القائمة الرئيسية" width="85%">
 
 ### طور اللعب المصنف التنافسي (Ranked Queues)
-<img src="assets/screenshots/ranked_menu.jpg" alt="طور اللعب المصنف" width="80%">
+<img src="assets/screenshots/ranked_menu.jpg" alt="طور اللعب المصنف" width="85%">
 
-### منصة التتويج ولوحة إحصائيات المباراة (Scoreboard)
-<img src="assets/screenshots/podium_scoreboard.jpg" alt="منصة التتويج" width="80%">
+### طور اللعب دون اتصال والأنماط المحلية (Offline Play)
+<img src="assets/screenshots/offline_menu.jpg" alt="طور اللعب دون اتصال" width="85%">
 
-### طور اللعب الودي (Casual Queues)
-<img src="assets/screenshots/casual_queues.jpg" alt="طور اللعب الودي" width="80%">
+### شاشة اختيار الأساطير والتوفيق بين اللاعبين (Character Select & Matchmaking)
+<img src="assets/screenshots/character_select.jpg" alt="شاشة اختيار الأساطير" width="85%">
 
-### شاشة اختيار الأساطير والمهمات اليومية (Character Select)
-<img src="assets/screenshots/character_select.jpg" alt="شاشة اختيار الأساطير" width="80%">
+### ساحة اختيار نمط التدريب الاحترافي (Training Mode)
+<img src="assets/screenshots/training_mode.jpg" alt="وضع التدريب" width="85%">
 
-### شاشة تسجيلات المباريات المحفوظة (Replays)
-<img src="assets/screenshots/replays_screen.jpg" alt="تسجيلات المباريات" width="80%">
+### قائمة الخيارات والإعدادات أثناء المباراة (In-Game Pause Menu)
+<img src="assets/screenshots/pause_menu.jpg" alt="قائمة الإيقاف المؤقت" width="85%">
 
 </div>
 
